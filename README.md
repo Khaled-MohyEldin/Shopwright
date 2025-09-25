@@ -18,15 +18,6 @@
 ## 📁 Project Structure  
 <img width="737" height="251" alt="image" src="https://github.com/user-attachments/assets/95c5a16d-bce5-4c14-9a28-561de0a97572" />
 
-Shopwright/
-├── tests/              # UI and API test cases
-├── POM/                # Page Object Models
-├── test-data/          # External datasets for data-driven testing
-├── utilities/          # Custom helpers and assertions
-├── playwright.config.ts
-├── package.json
-
-
 ---
 
 ## 🧪 Getting Started
