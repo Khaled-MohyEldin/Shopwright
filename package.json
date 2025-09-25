@@ -1,0 +1,25 @@
+{
+  "name": "pr-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mockNetwork": "npx playwright test mockNetwork",
+    "Full_DataDriven_ETE": "npx playwright test ete1",
+    "Full_DataDriven_ETE_allure": "npx playwright test ete1 --reporter=line,allure-playwright",
+    "Selective_DataDriven_ETE": "npx playwright test ete2",
+    "API": "npx playwright test webapi"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.5.0",
+    "allure-playwright": "^3.4.1"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1"
+  }
+}

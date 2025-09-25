@@ -1,0 +1,14 @@
+[
+  {
+    "email": "one@two.com",
+    "pass": "1&twoThree",
+    "country" : "Egypt",
+    "products": ["ADIDAS ORIGINAL","ZARA"]
+  },
+  {
+    "email":"two@one.com",
+    "pass": "2@oneThree",
+    "country" : "India",
+    "products": ["iphone 13 pro"]
+  }
+]
