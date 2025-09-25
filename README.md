@@ -15,7 +15,9 @@
 
 ---
 
-## 📁 Project Structure
+## 📁 Project Structure  
+<img width="737" height="251" alt="image" src="https://github.com/user-attachments/assets/95c5a16d-bce5-4c14-9a28-561de0a97572" />
+
 Shopwright/
 ├── tests/              # UI and API test cases
 ├── POM/                # Page Object Models
@@ -58,30 +60,8 @@ Runs Playwright tests
 
 Uploads test reports as artifacts
 
-To enable it, ensure your .github/workflows/playwright.yml is configured like this:
-name: Playwright Tests
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Install dependencies
-        run: npm install
-      - name: Run Playwright tests
-        run: npx playwright test
-      - name: Upload test report
-        uses: actions/upload-artifact@v3
-        with:
-          name: playwright-report
-          path: playwright-report/
-
+To enable it, ensure your .github/workflows/playwright.yml is configured like this  
+<img width="571" height="700" alt="image" src="https://github.com/user-attachments/assets/ed208b12-74f9-456b-af69-d2ed8db68a02" />
 
 📌 Future Enhancements
 Add visual regression testing
