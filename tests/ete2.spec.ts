@@ -4,7 +4,7 @@ import testData from '../test-data/placeOrder.json'
 
 /*
 this also end to end test but there are two main differences 
-    1- pages are implemented through custom features from Base.ts 
+    1- pages are implemented through custom features from Base.ts in Utilities
     2- it's DataDriven but with much more control to test certain data only 
         or to skip others and the sky here is the limit 
 */

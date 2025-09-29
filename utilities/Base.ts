@@ -5,7 +5,7 @@ import {BasePage, LoginPage, OrdersPage, PayPage, ProductsPage, ThnksPage} from 
 import { CartPage } from '../POM/CartPage';
 
 
-type Myfixtures = {
+type pages = {
     loginPage: LoginPage;
     payPage: PayPage;
     prodPage: ProductsPage;
@@ -15,7 +15,7 @@ type Myfixtures = {
     thnksPage: ThnksPage;
 }
 
-export const test = base.extend<Myfixtures>({
+export const test = base.extend<pages>({
     loginPage: async ({page},use)=>{
         await use(new LoginPage(page))
     },
