@@ -1,5 +1,7 @@
 name: Morining pipeline for Playwright Tests
 on:
+  schedule: 
+    - cron: '0 9 * * Fri' #run every Friday at 09 UTC 
   push:
     branches: 
       - '**'
