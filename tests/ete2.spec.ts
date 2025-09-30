@@ -1,6 +1,6 @@
 import { expect } from '@playwright/test';
 import { test } from '../utilities/Base';
-import testData from '../test-data/placeOrder.json'
+import testData from '../test-data/placeOrder.json';
 
 /*
 this also end to end test but there are two main differences 
@@ -8,10 +8,11 @@ this also end to end test but there are two main differences
     2- it's DataDriven but with much more control to test certain data only 
         or to skip others and the sky here is the limit 
 */
+
 for (const dataSet of testData) { 
 
 const runner = dataSet.email === "one@two.com"? test.only : test; //test only this data
-// const runner = dataSet.email === "one@two.com"? test.only : test; //test all data except this one 
+// const runner = dataSet.email === "one@two.com"? test.skip : test; //test all data except this one 
 
 runner(`end to end test for ${dataSet.email}`, 
     async ({loginPage, prodPage, payPage, basePage, orderPage, cartPage, thnksPage }) => {

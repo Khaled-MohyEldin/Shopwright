@@ -9,3 +9,6 @@ allure-results/
 
 # Playwright
 /playwright/.auth/
+
+#.env
+/.env
