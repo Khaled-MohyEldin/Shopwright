@@ -51,8 +51,6 @@ Runs Playwright tests
 
 Uploads test reports as artifacts
 
-To enable it, ensure your .github/workflows/playwright.yml is configured like this  
-<img width="571" height="700" alt="image" src="https://github.com/user-attachments/assets/ed208b12-74f9-456b-af69-d2ed8db68a02" />
 
 📌 Future Enhancements
 Add visual regression testing
