@@ -1,10 +1,11 @@
 name: Morining pipeline for Playwright Tests
 on:
   schedule: 
-    - cron: '0 9 * * Fri' #run every Friday at 09 UTC 
-  push:
-    branches: 
-      - '**'
+    - cron: '0 9 31 * *' #run every 31 day of month 09 UTC 
+                        # adjust it for your convience 
+  # push:
+  #   branches: 
+  #     - '**'
   pull_request:
     branches: [ main ]
 jobs:

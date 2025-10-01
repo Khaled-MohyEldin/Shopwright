@@ -1,15 +1,17 @@
 import { expect } from '@playwright/test';
-import { test } from '../utilities/Base';
-import testData from '../test-data/placeOrder.json';
+import { test, processJson } from '../utilities/Base';
 
 /*
 this also end to end test but there are two main differences 
     1- pages are implemented through custom features from Base.ts in Utilities
-    2- it's DataDriven but with much more control to test certain data only 
+    2- it's DataDriven with Finer control to test certain data only 
         or to skip others and the sky here is the limit 
 */
 
-for (const dataSet of testData) { 
+//process JSON Data + .env Variables
+let resolvedData = processJson();
+
+for (const dataSet of resolvedData) { 
 
 const runner = dataSet.email === "one@two.com"? test.only : test; //test only this data
 // const runner = dataSet.email === "one@two.com"? test.skip : test; //test all data except this one 

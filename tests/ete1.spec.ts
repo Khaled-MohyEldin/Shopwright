@@ -1,9 +1,15 @@
 import { test, expect } from '@playwright/test';
 import { LoginPage, BasePage } from '../POM';
-import testData from '../test-data/placeOrder.json'
+import { processJson } from '../utilities/Base';
 
 
-for (const dataSet of testData) {
+
+//process JSON Data + .env Variables
+let resolvedData = processJson();
+
+//Standard Fleunt POM , full DataDriven 
+
+for (const dataSet of resolvedData) {
 
 test(`end to end test for ${dataSet.email}`, async ({ page }) => {
     //=============== Test Data ===================

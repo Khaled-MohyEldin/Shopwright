@@ -1,0 +1,17 @@
+# Dependency directories and caches
+node_modules
+.venv
+
+# Version control
+.git
+.gitignore
+
+# Logs and temporary files
+npm-debug.log
+logs/
+tmp/
+
+# Local development files
+.vscode/
+.env
+docker-compose.yml 
